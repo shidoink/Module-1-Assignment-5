@@ -1,0 +1,150 @@
+
+
+.bg{
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    z-index: -1;
+}
+.bg img{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    min-width:50%;
+    min-height: 50%;
+}
+.body{
+    background-color: #FFFCE8;
+}
+
+.textbox{
+    width:40%
+}
+.hr{
+
+    border-top: 4px solid #A4B2Cb;
+    justify-self: stretch;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:  repeat(7, 1fr);
+    grid-template-rows: repeat(5, auto );
+    row-gap: 10px;
+    grid-template-areas:
+    ". established established established established established ."
+    " . entry1 entry1 entry1 entry1 entry1 ."
+    " . entry2 entry2 entry2 entry2 entry2 ."
+    " . entry3 entry3 entry3 entry3 entry3 ."
+    " . entry4 entry4 entry4 entry4 entry4 ."
+}
+.established{
+    grid-area: established;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #A4B2Cb;
+    font-family: 'Gloock', serif;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.navbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.navlink{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin:3px
+}
+.entry1{
+    display:flex;
+    grid-area: entry1;
+    border-bottom: 5px solid #A4B2Cb;
+}
+.entry2{
+    grid-area: entry2;
+    display: flex;
+    border-bottom: 5px solid #A4B2Cb;
+    margin:10px;
+}
+.entry3{
+    grid-area: entry3;
+    display: flex;
+    border-bottom: 5px solid #A4B2Cb;
+    margin:10px;
+}
+.entry4{
+    grid-area: entry4;
+}
+.arttxt{
+    font-family: 'Roboto', sans-serif;;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 3.5vw;
+    margin: 10px;
+    background-color: rgba(0,0,0, .7);
+    border-radius: 5px;
+    padding: 5px;
+    color: #A4B2Cb;
+}
+.pic1{
+    max-width: 30%;
+    min-width: 25%;
+    margin: 10px;
+    border-radius: 10%;
+    align-self: center;
+}
+.pic2{
+    max-width: 30%;
+    min-width: 25%;
+    margin: 10px;
+    border-radius: 10%;
+    align-self: center;
+}
+.pic3{
+    max-width: 30%;
+    min-width: 25%;
+    margin: 10px;
+    border-radius: 10%;
+    align-self: center;
+}
+.contactuscontainer{
+    margin: 5%;
+    width:90%;
+    padding-left: 20px;
+    display:flex;
+    background-color: rgb(7, 7, 7, .5);
+}
+.contactus{
+    width:30%;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+}
+.contactinfo{
+    display:flex;
+    width:70%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;
+    color: aliceblue;
+    justify-content: space-evenly;
+}
+.email{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;
+    color: aliceblue;
+}

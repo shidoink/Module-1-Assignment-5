@@ -1,0 +1,191 @@
+
+.bg{
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    z-index: -1;
+}
+.bg img{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    min-width:50%;
+    min-height: 50%;}
+
+.established{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #A4B2Cb;
+    font-family: 'Gloock', serif;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.textbox{
+    width:40%
+}
+.navbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+        
+    }
+    .navlink{
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        margin:3px
+    }
+
+.hr{
+
+    border-top: 4px solid #A4B2Cb;
+    justify-self: stretch;
+}
+    
+
+.rates-container{
+    margin:10px;
+    display:grid;
+    grid-template-columns: 1fr 300px 300px 300px 1fr;
+    grid-template-rows: repeat(5, 100px) ;
+    column-gap: 10px;
+    grid-template-areas:
+    ' . day week full .'
+    ' . day week full .'
+    ' . day week full .'
+    ' . day week full .'
+    ' . day week full .'
+}
+.day{
+    padding:10px;
+    grid-area: day;
+    background-color: #A4B2Cb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.day-tit{
+    font-family: 'Gloock', serif;
+}
+
+.day-descrip{
+    font-family: 'Roboto', sans-serif;
+
+}
+.week{
+    grid-area: week;
+    padding: 10px;
+    background-color: #99c581;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.week-tit{
+    font-family: 'Gloock', serif;
+    }
+.week-descrip{
+    font-family: 'Roboto', sans-serif;
+}
+.full{
+    grid-area: full;
+    padding: 10px;
+    background-color: #F97068;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.full-tit{
+    font-family: 'Gloock', serif;
+}
+.full-descrip{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and ( max-device-width: 1500px){
+   .rates-container{ margin: 10px;
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(3, 400px) ;
+    row-gap: 10px;
+    grid-template-areas:
+    'day'
+    'week'
+    'full'
+   }
+   .day{
+    padding:10px;
+    grid-area: day;
+    background-color: #A4B2Cb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .week{
+        padding:10px;
+        grid-area: week;
+        background-color: #99c581;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; 
+    }
+    .full{
+        padding:10px;
+        grid-area: full;
+        background-color: #F97068;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+.contactuscontainer{
+    margin: 5%;
+    width:90%;
+    padding-left: 20px;
+    display:flex;
+    background-color: rgb(7, 7, 7, .5);
+}
+.contactus{
+    width:30%;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+}
+.contactinfo{
+    display:flex;
+    width:70%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;
+    color: aliceblue;
+    justify-content: space-evenly;
+}
+.email{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;
+    color: aliceblue;
+}

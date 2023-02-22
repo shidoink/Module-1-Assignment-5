@@ -1,0 +1,91 @@
+.bg{
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    z-index: -1;
+}
+.bg img{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    min-width:50%;
+    min-height: 50%;}
+
+.established{
+    width:100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+    justify-content: center;
+     border-bottom: 5px solid #A4B2Cb;
+     font-family: 'Gloock', serif;
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+.navbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+        
+    }
+    .navlink{
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        margin:3px
+    }
+table, th, td{ border: 1px solid
+}
+table{
+    margin-top:20px;
+    margin-left: 12.5%;
+    background-color: rgba(164, 178, 203, .5);
+    width: 75%;
+    box-shadow: 10px 5px 5px;
+}
+th{
+    height: 70px;
+}
+.contactuscontainer{
+    margin: 5%;
+    width:90%;
+    padding-left: 20px;
+    display:flex;
+    background-color: rgb(7, 7, 7, .5);
+}
+.contactus{
+    width:30%;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+}
+.contactinfo{
+    display:flex;
+    width:70%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;
+    color: aliceblue;
+    justify-content: space-evenly;
+}
+.email{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width:700px) {
+    table{
+        margin:0px;
+        width:100%
+    }
+    
+}
